@@ -3,6 +3,9 @@
 #################
 Scripts.CS.dll
 Scripts.CS.hash
+Logs/
+Saves/
+Backups/
 
 #################
 ## Eclipse
