@@ -6,6 +6,8 @@ Scripts.CS.hash
 Logs/
 Saves/
 Backups/
+Spawns/
+*.lnk
 
 #################
 ## Eclipse
@@ -71,6 +73,7 @@ local.properties
 *.vspscc
 .builds
 *.dotCover
+Compile.bat
 
 ## TODO: If you have NuGet Package Restore enabled, uncomment this
 #packages/
