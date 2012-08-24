@@ -2400,13 +2400,13 @@ namespace Server.Network
 
 			int authID = pvSrc.ReadInt32();
 
-            if (ReadID(authID, out myversion) != 0 && !m_AuthIDWindow.ContainsKey(authID))
+            /*if (ReadID(authID, out myversion) != 0 && !m_AuthIDWindow.ContainsKey(authID))
             {
                 if (myversion != null && myversion != "unknown" && state.Version == null)
                     state.Version = new CV(myversion);
 
                 m_AuthIDWindow.Add(authID, new AuthIDPersistence(state.Version));
-            }
+            }*/
 
 			if ( m_AuthIDWindow.ContainsKey( authID ) ) {
 				AuthIDPersistence ap = m_AuthIDWindow[authID];
