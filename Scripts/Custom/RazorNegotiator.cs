@@ -8,7 +8,7 @@ namespace Server.Misc
 {
 	public class RazorFeatureControl
 	{
-		public const bool Enabled = true; // Is the "Feature Enforced" turned on?
+		public const bool Enabled = false; // Is the "Feature Enforced" turned on?
         public const bool KickOnFailure = false; // When true, this will cause anyone who does not negotiate (include those not running Razor at all) to be disconnected from the server.
 		public static readonly TimeSpan HandshakeTimeout = TimeSpan.FromSeconds( 30.0 ); // How long to wait for a handshake response before showing warning and disconnecting
 		public static readonly TimeSpan DisconnectDelay = TimeSpan.FromSeconds( 15.0 ); // How long to show warning message before they are disconnected
