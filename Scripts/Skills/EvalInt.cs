@@ -39,11 +39,11 @@ namespace Server.SkillHandlers
 				{
 					((TownCrier)targeted).PrivateOverheadMessage( MessageType.Regular, 0x3B2, true, "He looks smart enough to remember the news.  Ask him about it.", from.NetState ); // He looks smart enough to remember the news.  Ask him about it.
 				}
-				else if ( targeted is BaseVendor) /*&& ((BaseVendor)targeted).IsInvulnerable )*/
-				{
-					((BaseVendor)targeted).PrivateOverheadMessage( MessageType.Regular, 0x3B2, true, "That person could probably calculate the cost of what you buy from them.", from.NetState ); // That person could probably calculate the cost of what you buy from them.
-				}
-				else if ( targeted is Mobile )
+                /*else if ( targeted is BaseVendor) && ((BaseVendor)targeted).IsInvulnerable )
+                {
+                    ((BaseVendor)targeted).PrivateOverheadMessage( MessageType.Regular, 0x3B2, true, "That person could probably calculate the cost of what you buy from them.", from.NetState ); // That person could probably calculate the cost of what you buy from them.
+                }*/
+                else if ( targeted is Mobile )
 				{
 					Mobile targ = (Mobile)targeted;
 
