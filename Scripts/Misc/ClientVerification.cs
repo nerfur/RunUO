@@ -112,7 +112,7 @@ namespace Server.Misc
 				}
 			}
 
-            Required = new ClientVersion("5.0.8.3");
+            Required = null;// new ClientVersion("5.0.8.3");
 
 			if( Required != null )
 			{
