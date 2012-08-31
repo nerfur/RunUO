@@ -27,6 +27,8 @@ namespace Server.Items
 		{
 			m_Charges = charges;
 			LootType = LootType.Blessed;
+            ItemID = 3573;
+            Weight = 1.0;
 		}
 
 		public FireworksWand( Serial serial ) : base( serial )
@@ -41,7 +43,10 @@ namespace Server.Items
             }
             else
             {
-                from.Send(new AsciiMessage(Serial, ItemID, MessageType.Label, 0, 3, "", "a fireworks wand with " + m_Charges.ToString() + " charges"));
+                if (m_Charges == 100)
+                    from.Send(new AsciiMessage(Serial, ItemID, MessageType.Label, 0, 3, "", "a fireworks wand"));
+                else
+                    from.Send(new AsciiMessage(Serial, ItemID, MessageType.Label, 0, 3, "", "a fireworks wand with " + m_Charges.ToString() + " charges"));
             }
         }
 
@@ -72,12 +77,12 @@ namespace Server.Items
 				}
 				else
 				{
-					from.SendLocalizedMessage( 502412 ); // There are no charges left on that item.
+					from.SendAsciiMessage( "There are no charges left on that item." ); // There are no charges left on that item.
 					return;
 				}
 			}
 
-			from.SendLocalizedMessage( 502615 ); // You launch a firework!
+			//from.SendLocalizedMessage( 502615 ); // You launch a firework!
 
 			Point3D ourLoc = GetWorldLocation();
 

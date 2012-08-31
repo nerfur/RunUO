@@ -26,6 +26,7 @@ using Server.Engines.Craft;
 using Server.Spells.Spellweaving;
 using Server.Menus.Questions;
 using Server.Engines.PartySystem;
+using System.Net;
 
 namespace Server.Mobiles
 {
@@ -957,6 +958,46 @@ namespace Server.Mobiles
                 "irobot",
                 "origins32123"
             };
+
+            //300th Aniv
+            if (from is PlayerMobile)
+            {
+                bool GiveAniv = true;
+                Account myAccount = (Account)from.Account;
+
+                ArrayList myAccounts = Server.Gumps.AdminGump.GetSharedAccounts(myAccount.LoginIPs);
+                
+                foreach (Account accnt in myAccounts)
+                {
+                    if (accnt.GetTag("Aniv1") != null && accnt.GetTag("Aniv1") == "true")
+                    {
+                        GiveAniv = false;
+                        break;
+                    }
+                }
+
+                if (GiveAniv)
+                {
+                    Bag anivBag = new Bag();
+                    anivBag.Name = "Happy 300th Anniversary!";
+                    anivBag.Hue = Utility.RandomList(1419, 2121, 1275);
+
+                    switch (Utility.RandomMinMax(0, 4))
+                    {
+                        case 0: anivBag.AddItem(new JaanasHangoverRemedy()); break;
+                        case 1: anivBag.AddItem(new FireworksWand()); break;
+                        case 2: anivBag.AddItem(new CommemorativeCoin()); break;
+                        case 3: anivBag.AddItem(new CommemorativePlate()); break;
+                        case 4: anivBag.AddItem(new MagicEightBall()); break;
+                    }
+
+                    if (from.Backpack != null)
+                    {
+                        from.Backpack.DropItem(anivBag);
+                        myAccount.SetTag("Aniv1", "true");
+                    }
+                }
+            }
 
             //Beta reward
             if (from is PlayerMobile)

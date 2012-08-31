@@ -143,6 +143,9 @@ namespace Server.Misc
 			if ( from is BaseCreature && ((BaseCreature)from).Controlled )
 				gc *= 2;
 
+            //promotion
+            gc *= 2;
+
 			if ( from.Alive && ( ( gc >= Utility.RandomDouble() && AllowGain( from, skill, amObj ) ) /*|| skill.Base < 10.0 */) )
 				Gain( from, skill );
 

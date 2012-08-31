@@ -1401,7 +1401,7 @@ namespace Server.Gumps
 			return list;
 		}
 
-		private static ArrayList GetSharedAccounts( IPAddress[] ipAddresses )
+		public static ArrayList GetSharedAccounts( IPAddress[] ipAddresses )
 		{
 			ArrayList list = new ArrayList();
 
