@@ -47,7 +47,10 @@ namespace Server.Items
 
         public override void OnDoubleClick(Mobile from)
         {
-
+            if (Utility.RandomBool())
+                from.Send(new AsciiMessage(Serial, ItemID, MessageType.Label, 0, 3, "", "Ankhs"));
+            else
+                from.Send(new AsciiMessage(Serial, ItemID, MessageType.Label, 0, 3, "", "Serpents"));
         }
     }
 }
