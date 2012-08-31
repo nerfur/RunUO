@@ -4234,9 +4234,6 @@ namespace Server.Mobiles
                 backpack = (Container)backpack.FindItemByType(typeof(Backpack));
 
             pack.Generate(this, backpack, m_Spawning, m_KillersLuck);
-
-            //promotion
-            pack.Generate(this, backpack, m_Spawning, m_KillersLuck);
         }
 
         public virtual void AddLootPouch(LootPack pack)

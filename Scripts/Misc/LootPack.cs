@@ -432,85 +432,101 @@ namespace Server
 		#region Gold Piles
         public static readonly LootPack PoorPile = new LootPack(new LootPackEntry[]
 			{
-				new LootPackEntry(  true, Gold,			100.00, "1d25+25" )
+				new LootPackEntry(  true, Gold,			100.00, "1d25+25" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d25+25" )
 			});
 
         public static readonly LootPack MeagerPile = new LootPack(new LootPackEntry[]
 			{
-				new LootPackEntry(  true, Gold,			100.00, "1d100+75" )
+				new LootPackEntry(  true, Gold,			100.00, "1d100+75" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d100+75" )
 			} );
 
         public static readonly LootPack AveragePile = new LootPack(new LootPackEntry[]
 			{
-				new LootPackEntry(  true, Gold,			100.00, "1d150+150" )
+				new LootPackEntry(  true, Gold,			100.00, "1d150+150" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d150+150" )
 			} );
 
         public static readonly LootPack RichPile = new LootPack(new LootPackEntry[]
 			{
-				new LootPackEntry(  true, Gold,			100.00, "1d50+250" )
+				new LootPackEntry(  true, Gold,			100.00, "1d50+250" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d50+250" )
 			} );
 
         public static readonly LootPack FilthyRichPile = new LootPack(new LootPackEntry[]
 			{
-				new LootPackEntry(  true, Gold,			100.00, "1d100+400" )
+				new LootPackEntry(  true, Gold,			100.00, "1d100+400" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d100+400" )
 			} );
 
         public static readonly LootPack SpecialPile = new LootPack(new LootPackEntry[]
 			{
-				new LootPackEntry(  true, Gold,			100.00, "1d400+1600" )
+				new LootPackEntry(  true, Gold,			100.00, "1d400+1600" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d400+1600" )
 			});
 
         public static readonly LootPack UltraRichPile = new LootPack(new LootPackEntry[]
 			{
-				new LootPackEntry(  true, Gold,			100.00, "1d500+500" )
+				new LootPackEntry(  true, Gold,			100.00, "1d500+500" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d500+500" )
 			} );
         public static readonly LootPack SuperBossPile = new LootPack(new LootPackEntry[]
 			{
-				new LootPackEntry(  true, Gold,			100.00, "1d200+1100" )
+				new LootPackEntry(  true, Gold,			100.00, "1d200+1100" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d200+1100" )
 			});
 		#endregion
 
         #region Pouches
         public static readonly LootPack PoorPouch = new LootPack(new LootPackEntry[]
 			{
-				new LootPackEntry(  true, Gold,			100.00, "1d25+25" )
+				new LootPackEntry(  true, Gold,			100.00, "1d25+25" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d25+25" )
 			});
 
         public static readonly LootPack MeagerPouch = new LootPack(new LootPackEntry[]
 			{
-				new LootPackEntry(  true, Gold,			100.00, "1d100+75" )
+				new LootPackEntry(  true, Gold,			100.00, "1d100+75" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d100+75" )
 			});
 
         public static readonly LootPack AveragePouch = new LootPack(new LootPackEntry[]
 			{
-				new LootPackEntry(  true, Gold,			100.00, "1d125+175" )
+				new LootPackEntry(  true, Gold,			100.00, "1d125+175" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d125+175" )
 			});
 
         public static readonly LootPack RichPouch = new LootPack(new LootPackEntry[]
 			{
 				new LootPackEntry(  true, Gold,			100.00, "1d100+300" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d100+300" ),
                 new LootPackEntry(  true, GemItems,			100.00, 1 )
 			});
 
         public static readonly LootPack FilthyRichPouch = new LootPack(new LootPackEntry[]
 			{
 				new LootPackEntry(  true, Gold,			100.00, "1d100+400" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d100+400" ),
                 new LootPackEntry(  true, GemItems,			100.00, 1 ),
                 new LootPackEntry(  true, GemItems,			100.00, 1 )
 			});
 
         public static readonly LootPack SpecialPouch = new LootPack(new LootPackEntry[]
 			{
-				new LootPackEntry(  true, Gold,			100.00, "1d200+1200" )
+				new LootPackEntry(  true, Gold,			100.00, "1d200+1200" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d200+1200" )
 			});
 
         public static readonly LootPack UltraRichPouch = new LootPack(new LootPackEntry[]
 			{
-				new LootPackEntry(  true, Gold,			100.00, "1d500+500" )
+				new LootPackEntry(  true, Gold,			100.00, "1d500+500" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d500+500" )
 			});
         public static readonly LootPack SuperBossPouch = new LootPack(new LootPackEntry[]
 			{
-				new LootPackEntry(  true, Gold,			100.00, "1d200+1100" )
+				new LootPackEntry(  true, Gold,			100.00, "1d200+1100" ),
+                new LootPackEntry(  true, Gold,			100.00, "1d200+1100" )
 			});
 
         #endregion
