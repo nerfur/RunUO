@@ -991,7 +991,7 @@ namespace Server.Mobiles
                         case 4: anivBag.AddItem(new MagicEightBall()); break;
                     }
 
-                    if (from.Backpack != null)
+                    if (from.Backpack != null && from.Alive)
                     {
                         from.Backpack.DropItem(anivBag);
                         myAccount.SetTag("Aniv1", "true");
